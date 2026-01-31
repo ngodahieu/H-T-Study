@@ -1,50 +1,86 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>H&T Study</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <h1>My Website</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <div class="menu-icon">☰</div>
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <span class="brand">H&T STUDY</span>
+    </div>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <section class="hero">
-            <h2>Chào mừng đến với website của tôi</h2>
-            <p>Đây là trang chủ được tạo bằng HTML & CSS.</p>
-            <button>Khám phá thêm</button>
-        </section>
+    <nav class="nav">
+      <a href="#">Trang chủ</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Đăng ký khóa học</a>
+    </nav>
 
-        <section class="content">
-            <h3>Nội dung chính</h3>
-            <p>
-                Bạn có thể thêm nội dung giới thiệu, bài viết, sản phẩm
-                hoặc bất kỳ thông tin nào ở .
-            </p>
-        </section>
-    </main>
+    <div class="account">
+      👤
+    </div>
+  </header>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2026 My Website. All rights reserved.</p>
-    </footer>
+  <!-- BANNER -->
+  <section class="banner">
+    <img src="assets/banner.jpg" alt="Banner">
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    
+    <!-- LEFT -->
+    <section class="main-content">
+  <h2>Khóa học</h2>
+
+  <div class="course-list">
+
+    <div class="course-card">
+      <img src="assets/course-math.jpg" alt="Toán học">
+      <div class="course-info">
+        <h3>Toán học</h3>
+        <p>Ôn luyện từ cơ bản đến nâng cao, phù hợp nhiều trình độ.</p>
+        <button>Đăng ký</button>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="assets/course-fr.jpg" alt="Tiếng Pháp">
+      <div class="course-info">
+        <h3>Tiếng Pháp</h3>
+        <p>Luyện giao tiếp, DELF, Campus France.</p>
+        <button>Đăng ký</button>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="assets/course-ru.jpg" alt="Tiếng Nga">
+      <div class="course-info">
+        <h3>Tiếng Nga</h3>
+        <p>Nghe – nói – ngữ pháp – động từ chuyển động.</p>
+        <button>Đăng ký</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- RIGHT -->
+    <aside class="sidebar">
+      <h2>Thông báo mới nhất</h2>
+      <ul>
+        <li>Khai giảng khóa mới tháng 3</li>
+        <li>Đăng ký sớm giảm 20%</li>
+        <li>Lịch học cập nhật</li>
+      </ul>
+    </aside>
+
+  </main>
 
 </body>
 </html>
-
