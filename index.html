@@ -115,6 +115,13 @@ menuIcon.addEventListener("click", () => {
     header.classList.remove("scrolled");
   }
 });
+  const links = document.querySelectorAll(".nav a");
+links.forEach(link => {
+  if (link.getAttribute("href") === "#") {
+    link.classList.add("active");
+  }
+});
+
 </script>
 
 </body>
