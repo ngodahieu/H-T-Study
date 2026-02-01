@@ -22,8 +22,15 @@
     </nav>
 
     <div class="account">
-      👤
-    </div>
+  <div class="avatar">👤</div>
+  <div class="account-menu">
+    <a href="#">Hồ sơ</a>
+    <a href="#">Khóa học của tôi</a>
+    <hr>
+    <a href="#" class="logout">Đăng xuất</a>
+  </div>
+</div>
+
   </header>
 
   <!-- BANNER -->
@@ -81,6 +88,20 @@
     </aside>
 
   </main>
+<script>
+  const avatar = document.querySelector(".avatar");
+  const menu = document.querySelector(".account-menu");
+
+  avatar.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!avatar.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
+</script>
 
 </body>
 </html>
