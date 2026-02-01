@@ -30,10 +30,21 @@ body {
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 14px 28px;
   background: var(--white);
   border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  margin-left: auto;      /* đẩy nav + avatar sang phải */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.account {
+  margin-left: 24px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .header-left {
