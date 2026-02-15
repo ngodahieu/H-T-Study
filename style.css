@@ -262,3 +262,56 @@ body {
         transform: translateY(0);
     }
 }
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* ===== Dropdown chuẩn overlay ===== */
+.dropdown {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 260px;
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.25s ease;
+    z-index: 9999;
+}
+
+.dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.dropdown p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    color: #1f2937;
+    padding: 6px 0;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.dropdown a:hover {
+    color: var(--primary);
+}
