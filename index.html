@@ -4,50 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-
-    <!-- Link file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">H&T STUDY</div>
-        <nav>
-            <a href="index.html">Trang chủ</a>
-            <a href="#">Khóa học</a>
-            <a href="#">Lịch học</a>
-            <a href="#">Liên hệ</a>
-        </nav>
-        <div class="user">
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <div class="logo">H&T Study</div>
+
+    <nav>
+        <a href="index.html" class="active">🏠 Trang chủ</a>
+        <a href="#">📚 Khóa học</a>
+        <a href="#">📝 Phòng thi</a>
+        <a href="#">📅 Lịch học</a>
+        <a href="#">📊 Học bạ</a>
+        <a href="#">⚙ Cài đặt</a>
+    </nav>
+</aside>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+        <input type="text" placeholder="Tìm kiếm khóa học...">
+        <div class="user-box">
+            <div class="notification">🔔</div>
             <div class="avatar">H</div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Nền tảng học tập hiện đại</h1>
-            <p>Tối ưu – Thông minh – Chuẩn hóa theo 2026</p>
-            <button class="btn-primary">Bắt đầu ngay</button>
+    <!-- BANNER SLIDER -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <h2>Khóa học IMOE 2026</h2>
+                <p>Chinh phục điểm cao cùng lộ trình chuyên sâu</p>
+            </div>
+
+            <div class="slide">
+                <h2>Luyện thi Đại học</h2>
+                <p>Tổng ôn toàn diện – hệ thống hóa kiến thức</p>
+            </div>
+
+            <div class="slide">
+                <h2>Phòng thi Online</h2>
+                <p>Làm bài trực tuyến – chấm điểm tự động</p>
+            </div>
         </div>
     </section>
 
-    <main class="container">
+    <!-- DASHBOARD CARDS -->
+    <section class="dashboard">
         <div class="card">
-            <h2>Khóa học nổi bật</h2>
-            <p>Chương trình luyện thi được thiết kế chuyên sâu, cập nhật liên tục.</p>
+            <h3>12</h3>
+            <p>Khóa học đang học</p>
         </div>
 
         <div class="card">
-            <h2>Lịch học tuần</h2>
-            <p>Quản lý tiến độ học tập rõ ràng, trực quan.</p>
+            <h3>4</h3>
+            <p>Bài kiểm tra sắp tới</p>
         </div>
-    </main>
 
-    <footer>
-        © 2026 My Website | Thiết kế bởi bạn
-    </footer>
+        <div class="card">
+            <h3>85%</h3>
+            <p>Tiến độ hoàn thành</p>
+        </div>
 
+        <div class="card">
+            <h3>920</h3>
+            <p>Điểm tích lũy</p>
+        </div>
+    </section>
+
+    <!-- COURSE GRID -->
+    <section class="courses">
+        <h2>Khóa học nổi bật</h2>
+
+        <div class="course-grid">
+            <div class="course-card">
+                <h4>Hóa học 12</h4>
+                <p>Chuyên đề trọng tâm</p>
+            </div>
+
+            <div class="course-card">
+                <h4>Toán nâng cao</h4>
+                <p>Luyện đề chuyên sâu</p>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
