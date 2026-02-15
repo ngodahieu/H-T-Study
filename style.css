@@ -201,3 +201,64 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* Wrapper */
+.notification-wrapper,
+.avatar-wrapper {
+    position: relative;
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: none;
+    animation: fadeIn 0.2s ease;
+    z-index: 1000;
+}
+
+.dropdown p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    color: var(--primary);
+}
+
+/* Show */
+.dropdown.show {
+    display: block;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
