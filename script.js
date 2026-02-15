@@ -1,3 +1,4 @@
+// Slider
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 
@@ -12,3 +13,11 @@ function showSlide() {
 }
 
 setInterval(showSlide, 3000);
+
+// Sidebar toggle
+const toggleBtn = document.getElementById("toggleBtn");
+const sidebar = document.getElementById("sidebar");
+
+toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+});
