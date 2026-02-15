@@ -143,3 +143,61 @@ body {
 .course-card:hover {
     transform: translateY(-5px);
 }
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: linear-gradient(180deg, #3b82f6, #1e3a8a);
+    color: white;
+    padding: 25px;
+    position: fixed;
+    transition: 0.3s ease;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+/* MAIN điều chỉnh khi sidebar co lại */
+.main {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    padding: 20px 40px;
+    transition: 0.3s ease;
+}
+
+/* ========== TRẠNG THÁI THU GỌN ========== */
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar.collapsed .text {
+    display: none;
+}
+
+.sidebar.collapsed .logo {
+    display: none;
+}
+
+.sidebar.collapsed ~ .main {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+}
+
+/* Nút toggle */
+#toggleBtn {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
